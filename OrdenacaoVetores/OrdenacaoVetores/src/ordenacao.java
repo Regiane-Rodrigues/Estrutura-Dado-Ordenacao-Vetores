@@ -23,6 +23,7 @@ public class ordenacao {
                     Insercao();
                 break;
                 case 2:
+                    Selecao();
                 break;
                 case 3:
                 break;
@@ -42,5 +43,13 @@ public class ordenacao {
         ordenacaoInsercao insercao = new ordenacaoInsercao();
         insercao.OrdenacaoInsercao();
       }
+
+
+     public static void Selecao(){
+        ordenacaoSelecao metodo = new ordenacaoSelecao();
+        metodo.testeMensagem();
+        metodo.SelecaoMensagem();
+
+     } 
 }
 
