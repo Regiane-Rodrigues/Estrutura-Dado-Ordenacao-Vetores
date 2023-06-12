@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ordenacao",
+            "request": "launch",
+            "mainClass": "Ordenacao",
+            "projectName": "Estrutura-Dado-Ordenacao-Vetores_9fb22dbd"
+        },
+        {
+            "type": "java",
             "name": "ordenacao",
             "request": "launch",
             "mainClass": "ordenacao",

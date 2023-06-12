@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class ordenacaoSelecao {
+public class OrdenacaoSelecao {
 
     int tamanho = Integer.parseInt(JOptionPane.showInputDialog("Digite o tamanho do Vetor"));
     int[] vetor = new int[tamanho];
@@ -12,7 +12,8 @@ public class ordenacaoSelecao {
     }
 
     public void SelecaoMensagem() {
-        for (int i = 0; i < vetor.length; i++) {
+        for (int i = 0; i < ve
+                    tor.length; i++) {
             vetor[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite os numeros para ser implementados no Vetor"));
         }
         String msg = "Numeros inseridos no Vetor\n";
@@ -43,5 +44,4 @@ public class ordenacaoSelecao {
         }
         JOptionPane.showMessageDialog(null, msg);
     }
-
 }

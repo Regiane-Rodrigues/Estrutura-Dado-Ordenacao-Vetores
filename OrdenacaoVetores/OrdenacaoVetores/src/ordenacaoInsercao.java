@@ -1,8 +1,8 @@
 import javax.swing.JOptionPane;
 
-public class ordenacaoInsercao {
+public class OrdenacaoInsercao {
 
-    public void OrdenacaoInsercao() {
+    public void ordenacaoInsercao() {
 
         int tamanho = Integer.parseInt(JOptionPane.showInputDialog("Informe o tamanho do vetor: "));
         int[] vetor = new int[tamanho];
@@ -36,7 +36,6 @@ public class ordenacaoInsercao {
        
         StringBuilder vetorOrdenado = new StringBuilder();
         for (i = 0; i < tamanho; i++) {
-            
             
             vetorOrdenado.append("Posição ["+i+"] => ").append(vetor[i]).append("\n");
 
