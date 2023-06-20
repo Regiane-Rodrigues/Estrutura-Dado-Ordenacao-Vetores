@@ -10,7 +10,7 @@ public class OrdenacaoSelecao {
         JOptionPane.showMessageDialog(null, "Foi criado um vetor com o tamanho de " + tamanho + " Posições");
 
     }
-
+    long inicioExecucao = System.currentTimeMillis();
     public void ordnarVetor() {
         for (int i = 0; i < vetor.length - 1; i++) {
             int posicaoMenor = i;
@@ -29,6 +29,9 @@ public class OrdenacaoSelecao {
         }
     }
 
+    long fimExecucao = System.currentTimeMillis();
+    long tempoExecucao = System.currentTimeMillis();
+
     public void SelecaoMensagem() {
         for (int i = 0; i < vetor.length; i++) {
             vetor[i] = Integer
@@ -42,7 +45,7 @@ public class OrdenacaoSelecao {
 
         ordnarVetor();
 
-        msg = "Vetor ordenado:\n";
+        msg = "Tempo de execução: "+ tempoExecucao + "\nVetor ordenado:\n";
         for (int i = 0; i < vetor.length; i++) {
             msg += "posição [" + i + "]: " + vetor[i] + "\n";
 

@@ -38,8 +38,8 @@ public class Ordenacao {
 
     public static void Insercao() {
 
-        ordenacaoInsercao insercao = new ordenacaoInsercao();
-        insercao.OrdenacaoInsercao();
+        OrdenacaoInsercao insercao = new OrdenacaoInsercao();
+        insercao.ordenacaoInsercao();
         insercao.MenuInsercaoOrdenacao();
     }
 

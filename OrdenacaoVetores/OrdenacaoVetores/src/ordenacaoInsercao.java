@@ -2,10 +2,10 @@ import javax.swing.JOptionPane;
 
 public class OrdenacaoInsercao {
 
-      int tamanho = Integer.parseInt(JOptionPane.showInputDialog("Informe o tamanho do vetor: "));
+    int tamanho = Integer.parseInt(JOptionPane.showInputDialog("Informe o tamanho do vetor: "));
     int[] vetor = new int[tamanho];
 
-    public void OrdenacaoInsercao() {
+    public void ordenacaoInsercao() {
         int chave, j, i;
 
         for (i = 0; i < tamanho; i++) {
@@ -14,6 +14,7 @@ public class OrdenacaoInsercao {
 
         }
 
+        long inicioExecucao = System.currentTimeMillis();
         StringBuilder apresentaVetor = new StringBuilder();
         for (i = 0; i < tamanho; i++) {
 
@@ -34,6 +35,9 @@ public class OrdenacaoInsercao {
 
         }
 
+        long fimExecucao = System.currentTimeMillis();
+        long tempoExecucao = fimExecucao - inicioExecucao;
+
         StringBuilder vetorOrdenado = new StringBuilder();
         for (i = 0; i < tamanho; i++) {
 
@@ -41,7 +45,7 @@ public class OrdenacaoInsercao {
 
         }
 
-        JOptionPane.showMessageDialog(null, "Seu vetor ordenado: \n" + vetorOrdenado);
+        JOptionPane.showMessageDialog(null,"Tempo de execução:" +tempoExecucao+ "\nSeu vetor ordenado: \n" + vetorOrdenado);
 
     }
 

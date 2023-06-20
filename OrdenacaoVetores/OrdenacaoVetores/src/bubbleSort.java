@@ -48,8 +48,7 @@ public class BubbleSort {
             vetorOrdenado.append("Posição [" + i + "] => ").append(vetor[i]).append("\n");
 
         }
-        JOptionPane.showMessageDialog(null,
-                "Tempo de execução: " + tempoExecucao + "\nSeu vetor ordenado: \n" + vetorOrdenado);
+        JOptionPane.showMessageDialog(null, "Tempo de execução: " + tempoExecucao + "\nSeu vetor ordenado: \n" + vetorOrdenado);
 
     }
 
